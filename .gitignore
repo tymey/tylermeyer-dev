@@ -1,2 +1,13 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Next.js Build Output
+.next/
+out/
+
+# Production
+build/
+
+# Environmental Variable Files
 .env
+
