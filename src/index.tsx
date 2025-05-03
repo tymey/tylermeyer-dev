@@ -5,6 +5,10 @@ import "./styles/index.css";
 import App from "./App";
 
 const container = document.getElementById("root");
-const root = createRoot(container);
+const root = container ? createRoot(container) : null;
 
-root.render(<App />);
+if (root) {
+  root.render(<App />);
+} else {
+  throw new Error("No element exists with name: root");
+}
