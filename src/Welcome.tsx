@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
 
 function Welcome() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-700">
       <motion.h1
@@ -10,7 +13,7 @@ function Welcome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Hello World!
+        Welcome
       </motion.h1>
       <motion.button
         whileHover={{ scale: 1.2 }}
@@ -21,6 +24,7 @@ function Welcome() {
           backgroundColor: '#33ff99',
           borderRadius: 5,
         }}
+        onClick={() => { navigate('/hello') }}
       >
         Enter
       </motion.button>
