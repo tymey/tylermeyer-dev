@@ -3,11 +3,18 @@ import axios from "axios";
 import { motion } from "framer-motion";
 
 function Hello() {
-  const [apiMsg, setApiMsg] = useState("");
+  const [apiMsg, setApiMsg] = useState('');
 
   const getHello = () => {
-    axios.get('/api/hello')
-      .then(({ data }) => setApiMsg(data))
+    axios
+      .get('/api/hello')
+      .then(({ data }) => {
+        setApiMsg(data.message);
+      })
+      .catch((error) => {
+        console.error('Failed to getHello: ', error);
+        setApiMsg('Error loading message.');
+      });
   };
 
   useEffect(() => {
