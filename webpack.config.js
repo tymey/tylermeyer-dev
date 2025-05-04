@@ -13,12 +13,20 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   devServer: {
-    static: path.join(__dirname, "dist", "public"),
+    static: {
+      directory: path.join(__dirname, "dist", "public"),
+    },
+    hot: true,
     historyApiFallback: true,      // for React Router
     port: 3000,
-    proxy: {
-      "/api": "http://localhost:4000"  // forward API calls to Express
-    }
+    proxy: [
+      {
+        context: ["/api"],        // you can list multiple paths here
+        target: "http://localhost:8000",
+        changeOrigin: true,       // rewrites host header to match target
+        secure: false             // if you’re using self-signed certs on the backend
+      }
+    ]
   },
   module: {
     rules: [
