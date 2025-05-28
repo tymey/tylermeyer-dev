@@ -1,4 +1,24 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --drop-shadow-green: 0 0 10rem #29c26f;
+
+  --color-primary-200: oklch(1 0 131);
+  --color-primary-400: oklch(0.5711 0.1468 352.45);
+  --color-primary-500: oklch(0.6496 0.1391 351.25);
+  --color-primary-600: oklch(0.4651 0.1607 356.18);
+
+  --color-grayscale-25: oklch(0.9129 0.0071 88.65);
+  --color-grayscale-50: oklch(0.6496 0.1391 351.25);
+  --color-grayscale-100: oklch(0.9521 0 0);
+  --color-grayscale-200: oklch(0.9946 0.0026 286.35);
+  --color-grayscale-950: oklch(0.4548 0.1076 351.82);
+}
+
+/* @font-face {
+  font-family: "SuperMario";
+  src: url(/Fonts/Mario/Brugty.ttf);
+} */
 
 * {
   margin: 0;

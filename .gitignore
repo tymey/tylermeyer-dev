@@ -1,9 +1,8 @@
 # Dependencies
 node_modules
 
-# Production
-dist
+# Next
+.next
 
-# Environmental Variable Files
+# env
 .env
-
