@@ -1,6 +1,7 @@
 import { m, LazyMotion, domAnimation } from 'motion/react';
 
 import SectionTitle from '@/components/SectionTitle';
+import { introduction } from 'constants/constants';
 
 function About() {
     return (
@@ -8,6 +9,30 @@ function About() {
             <div className="w-full xl:w-[70%] flex flex-col pb-16">
                 <div className="w-full">
                     <SectionTitle title="ABOUT ME" subtitle="Introduction" />
+                </div>
+                <div className="w-full flex flex-col-reverse sm:flex-row">
+                    <div className="w-full md:w-[50%] md:h-full flex items-center mt-100">
+                        <LazyMotion features={domAnimation} strict>
+                            <m.p
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{
+                                    duration: 0.5,
+                                    type: "spring",
+                                    stiffness: 100,
+                                    damping: 20,
+                                }}
+                                className="text-grayscale-50 p-6 text-center flex flex-col gap-5"
+                            >
+                                {introduction.text.map((line, i) => {
+                                    if (i === 0) {
+                                        return <span key={i} className="text-primary-400" style={{ fontSize: '1.2em', fontWeight: '900' }}>{line}</span>
+                                    }
+                                    return <span key={i} className="text-primary-500" style={{ fontSize: '0.95em', fontWeight: '500' }}>{line}</span>
+                                })}
+                            </m.p>
+                        </LazyMotion>
+                    </div>
                 </div>
             </div>
         </div>

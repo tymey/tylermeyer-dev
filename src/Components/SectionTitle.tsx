@@ -16,11 +16,16 @@ function SectionTitle({ title, subtitle }: SectionTitleProps) {
             >
                 <span
                     className="opacity-50"
+                    style={{
+                        textTransform: 'uppercase',
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: '600',
+                    }}
                 >
                     {subtitle}
                 </span>
                 <h2
-                    className="tracking-wider text-7xl sm:text-8xl md:text-9xl"
+                    className="tracking-wider text-3xl sm:text-4xl md:text-5xl"
                 >
                     {title.split('').map((char, index) => {
                         if (char === " ") {
