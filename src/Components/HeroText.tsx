@@ -1,4 +1,4 @@
-import { m, LazyMotion, domAnimation } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "motion/react";
 
 function HeroText() {
     const name = "Tyler Meyer";

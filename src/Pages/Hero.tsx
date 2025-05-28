@@ -1,4 +1,4 @@
-import { m, LazyMotion, domAnimation } from 'framer-motion';
+import { m, LazyMotion, domAnimation } from 'motion/react';
 
 import HeroText from '@/components/HeroText';
 import HeroParticles from '@/components/Particles/HeroParticles';

@@ -1,4 +1,4 @@
-import { m } from 'framer-motion';
+import { m } from 'motion/react';
 
 function HeroScroller() {
     return (
@@ -7,10 +7,10 @@ function HeroScroller() {
             className="absolute xs:bottom-10 bottom-12 flex justify-center items-center"
         >
             <a href="#about">
-                <div className="w-[35-px] h-[64px] rounded-3xl border-4 border-primary-400 flex justify-center items-start p-2">
+                <div className="w-[35px] h-[64px] rounded-3xl border-4 border-primary-400 flex justify-center items-start p-2">
                     <m.div
                         animate={{
-                            y: [0, 24, 0]
+                            y: [0, 36, 0]
                         }}
                         transition={{
                             duration: 2,
