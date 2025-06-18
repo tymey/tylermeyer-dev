@@ -1,4 +1,7 @@
 import {
+    flareLogo,
+    gameKnightLogo,
+    vitalityLogo,
     profile,
 } from "../assets";
 
@@ -12,7 +15,52 @@ const introduction = {
     ]
 }
 
+const navLinks = [
+    {
+        id: 'about',
+        title: 'About',
+    },
+    {
+        id: 'projects',
+        title: 'Projects',
+    },
+    {
+        id: 'skills',
+        title: 'Skills',
+    },
+    {
+        id: 'contact',
+        title: 'Contact',
+    },
+];
+
+const projects = [
+    {
+        name: "Flare",
+        description: "A social app",
+        image: flareLogo,
+        sourceCodeLink: "https://github.com/the-full-stack-attack/flare",
+        demoLink: "",
+    },
+    {
+        name: "Game Knight",
+        description: "A board game app",
+        image: gameKnightLogo,
+        sourceCodeLink: "https://github.com/Awesome-Person-Interface/game-knight",
+        demoLink: "",
+    },
+    {
+        name: "Vitality",
+        description: "A fitness tracking app",
+        image: vitalityLogo,
+        sourceCodeLink: "https://github.com/Awesome-Person-Interface/fitness-tracker",
+        demoLink: "",
+    },
+];
+
 export {
     profile,
     introduction,
+    navLinks,
+    projects,
 };
