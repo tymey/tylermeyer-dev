@@ -1,8 +1,8 @@
 "use client"
 
-import Hero from "@/pages/Hero";
-import About from "@/pages/About";
-import Projects from "@/pages/Projects";
+import Hero from "@/sections/Hero";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
 
 export default function Page() {
     return (
