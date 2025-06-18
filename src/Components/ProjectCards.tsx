@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { m } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { projects } from "../constants/constants";
@@ -123,7 +124,7 @@ const ProjectCard = ({
               variants={fadeIn("up", "spring", index * 0.5, 0.75)}
           >
               <div className="relative">
-                  <img
+                  <Image
                       src={image.src}
                       alt={name}
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
@@ -133,7 +134,7 @@ const ProjectCard = ({
                           onClick={() => window.open(sourceCodeLink, "_blank")}
                           className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
                       >
-                          <img
+                          <Image
                               src={githubIcon.src}
                               alt="github"
                               className="w-full h-full object-contain"
