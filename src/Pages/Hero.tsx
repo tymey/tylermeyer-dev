@@ -1,7 +1,7 @@
 import { m, LazyMotion, domAnimation } from 'motion/react';
 
 import HeroText from '@/components/HeroText';
-import HeroParticles from '@/components/Particles/HeroParticles';
+// import HeroParticles from '@/components/Particles/HeroParticles';
 import HeroScroller from '@/components/Elements/HeroScroller';
 
 function Hero() {

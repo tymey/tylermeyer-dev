@@ -21,7 +21,7 @@ function HeroText() {
                         whileInView={{ x: 0 }}
                         transition={{ duration: 0.6, type: "spring" }}
                     >
-                        Welcome, I'm{" "}
+                        Welcome, I&apos;m{" "}
                     </m.span>
                     <m.div
                         initial={{ x: 100 }}
