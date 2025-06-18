@@ -1,3 +1,7 @@
+import {
+    profile,
+} from "../assets";
+
 const introduction = {
     text: [
         `Welcome! Thank you for visiting!`,
@@ -9,5 +13,6 @@ const introduction = {
 }
 
 export {
+    profile,
     introduction,
-}
+};

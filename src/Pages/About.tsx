@@ -1,7 +1,8 @@
 import { m, LazyMotion, domAnimation } from 'motion/react';
 
 import SectionTitle from '@/components/SectionTitle';
-import { introduction } from 'constants/constants';
+import { introduction, profile } from 'constants/constants';
+import ImageSlider from '@/components/Elements/ImageSlider';
 
 function About() {
     return (
@@ -35,7 +36,7 @@ function About() {
                     </div>
                     <div className="w-full md:w-[50%] flex h-full items-center justify-center">
                         <div className="w-[80%] lg:w-[50%] h-[300px] sm:h-[350px] flex justify-center items-center">
-
+                            <ImageSlider images={[profile]} />
                         </div>
                     </div>
                 </div>
