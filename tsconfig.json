@@ -23,11 +23,9 @@
       }
     ],
     "strictNullChecks": true,
-    "baseUrl": "src/",
+    "baseUrl": ".",
     "paths": {
-      "@/styles/*": ["styles/*"],
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": [

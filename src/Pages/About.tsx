@@ -1,7 +1,7 @@
 import { m, LazyMotion, domAnimation } from 'motion/react';
 
 import SectionTitle from '@/components/SectionTitle';
-import { introduction, profile } from 'constants/constants';
+import { introduction, profile } from '../constants/constants';
 import ImageSlider from '@/components/Elements/ImageSlider';
 
 function About() {
