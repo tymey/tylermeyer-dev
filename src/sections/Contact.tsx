@@ -2,6 +2,7 @@ import { m, LazyMotion, domAnimation } from "motion/react";
 
 import SectionTitle from "@/components/SectionTitle";
 import ContactForm from "@/components/ContactForm";
+import SocialLinks from "@/components/SocialLinks";
 
 function Contact() {
     return (
@@ -13,18 +14,21 @@ function Contact() {
                 <div className="w-full">
                     <SectionTitle title="CONTACT" subtitle="Let's build something!" />
                 </div>
+                <div className="w-full flex justify-center items-center">
+                    <LazyMotion features={domAnimation} strict>
+                        <m.div
+                            initial={{ x: 200 }}
+                            whileInView={{ x: 0 }}
+                            transition={{ duration: 0.6, type: "string" }}
+                            className="w-full sm:w-[90%] md:w-[80%] sm:h-[600px] p-4 flex flex-col sm:flex-row gap-4"
+                        >
+                            <ContactForm />
+                        </m.div>
+                    </LazyMotion>
+                </div>
             </div>
-            <div className="w-full flex justify-center items-center">
-                <LazyMotion features={domAnimation} strict>
-                    <m.div
-                        initial={{ x: 200 }}
-                        whileInView={{ x: 0 }}
-                        transition={{ duration: 0.6, type: "string" }}
-                        className="w-full sm:w-[90%] md:w-[80%] sm:h-[600px] p-4 flex flex-col sm:flex-row gap-4"
-                    >
-                        <ContactForm />
-                    </m.div>
-                </LazyMotion>
+            <div className="w-full flex flex-col">
+                <SocialLinks />
             </div>
         </div>
     );

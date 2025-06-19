@@ -367,6 +367,32 @@ const formInputFields = [
         label: "Title",
         name: "title"
     },
+];
+
+const socialLinks = [
+    // LinkedIn
+    {
+        network: "linkedin",
+        link: "https://www.linkedin.com/in/tyler-meyer-dev/",
+    },
+
+    // GitHub
+    {
+        network: "github",
+        link: "https://github.com/tymey",
+    },
+    
+    // YouTube
+    {
+        network: "youtube",
+        link: "https://www.youtube.com/@TylerMeyerDev",
+    },
+    
+    // Email
+    {
+        network: "email",
+        link: "mailto:tylermeyer.dev@gmail.com",
+    },
     
 ];
 
@@ -381,4 +407,5 @@ export {
     deploymentSkills,
     developerSkills,
     formInputFields,
+    socialLinks,
 };
