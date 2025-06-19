@@ -28,6 +28,7 @@ import sqlIcon from "./tech/sql.png";
 import tailwindIcon from "./tech/tailwindcss.png";
 import typescriptIcon from "./tech/typescript.png";
 import vercelIcon from "./tech/vercel.png";
+import webpackIcon from "./tech/webpack.png";
 
 // Project Logos
 import flareLogo from "./projects/flareLogo.png";
@@ -67,6 +68,7 @@ export {
     tailwindIcon,
     typescriptIcon,
     vercelIcon,
+    webpackIcon,
     flareLogo,
     gameKnightLogo,
     vitalityLogo,
