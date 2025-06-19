@@ -1,9 +1,7 @@
 import emailjs from "@emailjs/browser";
 
-import { EMAILJS_PUBLIC_KEY } from "private";
-
 emailjs.init({
-    publicKey: EMAILJS_PUBLIC_KEY,
+    publicKey: "Kx2aK846zj3pkO7_o",
     blockHeadless: true,
     blockList: {
         list: [], // Banned emails here
