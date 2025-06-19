@@ -1,4 +1,4 @@
-import { m, LazyMotion, domAnimation } from "motion/react";
+// import { m, LazyMotion, domAnimation } from "motion/react";
 
 import SectionTitle from "@/components/SectionTitle";
 
