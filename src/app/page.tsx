@@ -4,6 +4,7 @@ import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
+import Contact from "@/sections/Contact";
 
 export default function Page() {
     return (
@@ -12,6 +13,7 @@ export default function Page() {
             <About /> {/* More Detailed Intro */}
             <Projects /> {/* Project Cards */}
             <Skills /> {/* Skill Cards */}
+            <Contact /> {/* Email Form */}
         </>
     );
 }
