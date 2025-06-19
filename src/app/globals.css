@@ -35,7 +35,6 @@
 body {
   background-color: #4a7b67; /* Mossy Mist */
   background-image: url("../assets/flowers.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-x: hidden;

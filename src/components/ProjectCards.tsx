@@ -112,17 +112,17 @@ const ProjectCard = ({
   demoLink,
 }: ProjectCardProps) => {
   return (
-      <Tilt
-        //   options={{
-        //       max: 40,
-        //       scale: 1,
-        //       speed: 450,
-        //   }}
-          className="shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
-      >
-          <m.div
-              variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-          >
+	<m.div
+		variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+	>
+		<Tilt
+			//   options={{
+			//       max: 40,
+			//       scale: 1,
+			//       speed: 450,
+			//   }}
+			className="backdrop-blur-[2px] shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
+		>
               <div className="relative">
                   <Image
                       src={image.src}
@@ -148,8 +148,8 @@ const ProjectCard = ({
               </div>
 
               <div className="mt-3">
-                  <h3 className="text-white font-bold text-2xl">{name}</h3>
-                  <p className="mt-2 text-secondary text-[14px] leading-snug">
+                  <h3 className="text-primary-200 font-bold text-2xl">{name}</h3>
+                  <p className="mt-2 text-primary-600 text-[14px] leading-snug">
                       {description}
                   </p>
               </div>
@@ -163,14 +163,14 @@ const ProjectCard = ({
                       See the Demo
                   </a>
               </div>
-          </m.div>
-      </Tilt>
+      	</Tilt>
+    </m.div>
   );
 };
 
 function ProjectCards() {
     return (
-        <div className="mt-5 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
+        <div className="mt-100 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
             {projects.map((project, index) => (
                 <ProjectCard key={`project-${index}`} index={index} {...project} />
             ))}

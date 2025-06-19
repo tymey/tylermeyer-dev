@@ -15,10 +15,10 @@ function About() {
                     <div className="w-full md:w-[50%] md:h-full flex items-center mt-100">
                         <LazyMotion features={domAnimation} strict>
                             <m.p
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
+                                initial={{ opacity: 0, x: -350 }}
+                                whileInView={{ opacity: 1, x: 20 }}
                                 transition={{
-                                    duration: 0.5,
+                                    duration: 3.5,
                                     type: "spring",
                                     stiffness: 100,
                                     damping: 20,
@@ -29,7 +29,7 @@ function About() {
                                     if (i === 0) {
                                         return <span key={i} className="text-primary-400" style={{ fontSize: '1.2em', fontWeight: '900' }}>{line}</span>
                                     }
-                                    return <span key={i} className="text-primary-500" style={{ fontSize: '0.95em', fontWeight: '500' }}>{line}</span>
+                                    return <span key={i} className="text-primary-600" style={{ fontSize: '0.95em', fontWeight: '500' }}>{line}</span>
                                 })}
                             </m.p>
                         </LazyMotion>

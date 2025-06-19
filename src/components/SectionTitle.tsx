@@ -10,9 +10,9 @@ function SectionTitle({ title, subtitle }: SectionTitleProps) {
         <LazyMotion features={domAnimation} strict>
             <m.div
                 initial={{ x: -350 }}
-                whileInView={{ x: 0 }}
+                whileInView={{ x: 20 }}
                 transition={{ duration: 0.6, type: "spring" }}
-                className="text-primary-400 p-6 noselect"
+                className="text-primary-200 p-6 noselect"
             >
                 <span
                     className="opacity-50"
@@ -25,7 +25,7 @@ function SectionTitle({ title, subtitle }: SectionTitleProps) {
                     {subtitle}
                 </span>
                 <h2
-                    className="tracking-wider text-3xl sm:text-4xl md:text-5xl"
+                    className="tracking-wider text-4xl sm:text-5xl md:text-6xl"
                 >
                     {title.split('').map((char, index) => {
                         if (char === " ") {
