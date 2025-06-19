@@ -3,10 +3,13 @@
 @theme {
   --drop-shadow-green: 0 0 10rem #29c26f;
 
-  --color-primary-200: oklch(1 0 131);
-  --color-primary-400: oklch(0.5711 0.1468 352.45);
-  --color-primary-500: oklch(0.6496 0.1391 351.25);
-  --color-primary-600: oklch(0.4651 0.1607 356.18);
+  --color-primary-200: #2b2b2b; /* Rich Charcoal */
+  --color-primary-400: #2e5e4e; /* Forest Fern */
+  --color-primary-500: #76a181; /* Herbal Mint */
+  --color-primary-600: #f5f3ec; /* Bone White */
+
+  --color-contrast-200: #c16e3f; /* Clay Orange */
+  --color-contrast-400: #5a7981; /* Stone Blue */
 
   --color-grayscale-25: oklch(0.9129 0.0071 88.65);
   --color-grayscale-50: oklch(0.6496 0.1391 351.25);
@@ -14,6 +17,7 @@
   --color-grayscale-200: oklch(0.9946 0.0026 286.35);
   --color-grayscale-950: oklch(0.4548 0.1076 351.82);
 }
+
 
 /* @font-face {
   font-family: "SuperMario";
@@ -29,8 +33,9 @@
 }
 
 body {
-  /* background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png"); */
-  background-color: #E4E2DD;
+  background-color: #4a7b67; /* Mossy Mist */
+  background-image: url("../assets/flowers.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-x: hidden;
@@ -55,13 +60,13 @@ body {
 #repulse-div {
   -webkit-appearance: none;
   appearance: none;
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #B64D80);
+  -webkit-filter: drop-shadow(0 0 5rem #89ebc1);
+  filter: drop-shadow(0 0 5rem #76a181); /* Herbal Mint */
 }
 
 #repulse-div > h1 {
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #eec5d9);
+  -webkit-filter: drop-shadow(0 0 5rem #89ebc1);
+  filter: drop-shadow(0 0 5rem #89ebc1);
 }
 
 #journey-scroll::-webkit-scrollbar {
@@ -76,7 +81,7 @@ body {
 .arrowpath,
 polyline {
   fill: none;
-  stroke: #B64D80;
+  stroke: #2e5e4e;
   stroke-width: 2;
 }
 
@@ -99,7 +104,7 @@ polyline {
   border-collapse: separate;
   background-size: cover;
   background-position: center;
-  outline: 1px #B64D80;
+  outline: 1px #c16e3f;
 }
 
 @keyframes morph {
@@ -128,7 +133,7 @@ polyline {
 .bounce:hover {
   display: inline-block;
   animation: rubberband 0.8s ease-out;
-  color: #763B57;
+  color: #1d4739;
 }
 
 @keyframes rubberband {
@@ -159,15 +164,15 @@ polyline {
   .drop-shadow-div {
     -webkit-appearance: none;
     appearance: none;
-    -webkit-filter: drop-shadow(0 0 1.5rem #eec5d9);
-    filter: drop-shadow(0 0 1.5rem #eec5d9);
+    -webkit-filter: drop-shadow(0 0 1.5rem #c16e3f);
+    filter: drop-shadow(0 0 1.5rem #c16e3f);
   }
 }
 
 .loader {
   width: 100px;
   height: 100px;
-  border: 5px solid #B64D80;
+  border: 5px solid #2e5e4e;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -183,7 +188,7 @@ polyline {
   height: 80px;
   border-radius: 50%;
   border: 5px solid;
-  border-color: #B64D80 transparent;
+  border-color: #2e5e4e transparent;
 }
 
 @keyframes rotation {

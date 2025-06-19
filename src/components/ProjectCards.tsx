@@ -127,6 +127,8 @@ const ProjectCard = ({
                   <Image
                       src={image.src}
                       alt={name}
+					  width={500}
+					  height={500}
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
                   <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -137,6 +139,8 @@ const ProjectCard = ({
                           <Image
                               src={githubIcon.src}
                               alt="github"
+							  width={50}
+							  height={50}
                               className="w-full h-full object-contain"
                           />
                       </div>
