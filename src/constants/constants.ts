@@ -339,6 +339,37 @@ const developerSkills = [
     }
 ];
 
+const formInputFields = [
+    // First Name
+    {
+        id: "firstname",
+        label: "First Name",
+        name: "from_first_name"
+    },
+    
+    // Last Name
+    {
+        id: "lastname",
+        label: "Last Name",
+        name: "from_last_name"
+    },
+    
+    // E-mail
+    {
+        id: "email",
+        label: "Email",
+        name: "from_email"
+    },
+    
+    // Title
+    {
+        id: "title",
+        label: "Title",
+        name: "title"
+    },
+    
+];
+
 export {
     profile,
     introduction,
@@ -349,4 +380,5 @@ export {
     backendSkills,
     deploymentSkills,
     developerSkills,
+    formInputFields,
 };
