@@ -1,4 +1,4 @@
-import { useRef, useState, SyntheticEvent } from "react";
+import { useState, SyntheticEvent } from "react";
 import emailjs from "@emailjs/browser";
 
 import { formInputFields } from "@/constants/constants";
