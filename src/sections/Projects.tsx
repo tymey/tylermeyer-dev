@@ -1,5 +1,5 @@
-import ProjectCards from "../components/ProjectCards";
-import SectionTitle from "../components/SectionTitle";
+import ProjectCards from "@/components/ProjectCards";
+import SectionTitle from "@/components/SectionTitle";
 
 function Projects() {
     return (
