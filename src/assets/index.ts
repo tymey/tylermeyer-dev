@@ -1,3 +1,7 @@
+// SVGs
+import menu from "./menu.svg";
+import close from "./close.svg";
+
 // Tech
 import agileIcon from "./tech/agile.png";
 import awsIcon from "./tech/aws.png";
@@ -39,6 +43,8 @@ import vitalityLogo from "./projects/vitalityLogo.png";
 import profile from "./profile/profile.png";
 
 export {
+    menu,
+    close,
     agileIcon,
     awsIcon,
     axiosIcon,
