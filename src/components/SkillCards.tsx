@@ -38,7 +38,7 @@ function SkillCards({ skills }: SkillCardsProps) {
                                 height={50}
                             />
                             <span
-                                className="text-xl"
+                                className="text-3xl"
                                 style={{
                                     fontFamily: "Poppins, sans-serif",
                                     fontWeight: "bold",
