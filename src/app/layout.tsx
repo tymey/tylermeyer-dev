@@ -4,7 +4,10 @@ import './globals.css';
 
 export const metadata: Metadata = {
     title: 'Tyler Meyer Dev',
-    description: 'The software engineering portfolio site for Tyler Meyer.'
+    description: 'The software engineering portfolio site for Tyler Meyer.',
+    icons: {
+        icon: '/favicon.ico'
+    }
 };
 
 export default function RootLayout({
