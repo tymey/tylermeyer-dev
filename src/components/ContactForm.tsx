@@ -1,5 +1,6 @@
 import { useState, SyntheticEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { m } from "motion/react";
 
 import { formInputFields } from "@/constants/constants";
 
@@ -27,7 +28,7 @@ function ContactForm() {
 
     return (
         <div
-            className="justify-center"
+            className="justify-center items-center"
             style={{
                 backgroundImage: "url(../assets/flower.png)",
                 width: "100%",
@@ -37,7 +38,7 @@ function ContactForm() {
         >
             <div>
                 <h2
-                    className="message text-5xl bg-primary-200 p-2 rounded-xl text-primary-600 text-center rounded-br-[0%] relative shadow-2xl"
+                    className="message text-4xl bg-primary-200 p-2 rounded-xl text-primary-600 text-center rounded-br-[0%] relative shadow-2xl"
                 >
                     {`LET'S CONNECT & MAKE IT HAPPEN!`}
                 </h2>
@@ -69,12 +70,18 @@ function ContactForm() {
                             className="p-[0.5em] rounded-xl text-primary-600 bac bg-primary-200"
                             placeholder="Enter your message..."
                             name="message"
+                            rows={5}
                             required
                         ></textarea>
                     </div>
                     <div className="w-full flex justify-center">
-                        <input
-                            className="w-[100px] h-[50px] bg-primary-400 text-primary-600 rounded-xl cursor-pointer hover:bg-primary-500 mb-5"
+                        <m.input
+                            whileHover={{
+                                scale: 1.2,
+                                transition: { duration: 0.2 }
+                            }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-[100px] h-[50px] bg-primary-400 text-primary-600 rounded-xl cursor-pointer hover:bg-green-900 mb-5"
                             type="submit"
                             value={!isSent ? 'Send' : 'Done!'}
                         />

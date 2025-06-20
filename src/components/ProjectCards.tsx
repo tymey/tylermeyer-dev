@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { m } from "framer-motion";
+import { m } from "motion/react";
 import Tilt from "react-parallax-tilt";
 import { projects } from "../constants/constants";
 import { githubIcon } from "../assets";
@@ -123,46 +123,46 @@ const ProjectCard = ({
 			//   }}
 			className="backdrop-blur-[2px] shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
 		>
-              <div className="relative">
-                  <Image
-                      src={image.src}
-                      alt={name}
-					  width={500}
-					  height={500}
-                      className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
-                  />
-                  <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                      <div
-                          onClick={() => window.open(sourceCodeLink, "_blank")}
-                          className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-                      >
-                          <Image
-                              src={githubIcon.src}
-                              alt="github"
-							  width={50}
-							  height={50}
-                              className="w-full h-full object-contain"
-                          />
-                      </div>
-                  </div>
-              </div>
+			<div className="relative">
+				<Image
+					src={image.src}
+					alt={name}
+					width={500}
+					height={500}
+					className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
+				/>
+				<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+					<div
+						onClick={() => window.open(sourceCodeLink, "_blank")}
+						className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
+					>
+						<Image
+							src={githubIcon.src}
+							alt="github"
+							width={50}
+							height={50}
+							className="w-full h-full object-contain"
+						/>
+					</div>
+				</div>
+			</div>
 
-              <div className="mt-3">
-                  <h3 className="text-primary-200 font-bold text-2xl">{name}</h3>
-                  <p className="mt-2 text-primary-600 text-[14px] leading-snug">
-                      {description}
-                  </p>
-              </div>
-              <div className="mt-2 flex flex-wrap gap-1"></div>
-              <div className="mt-3 flex justify-center items-center">
-                  <a
-                      className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-                      href={demoLink}
-                      target="_blank"
-                  >
-                      See the Demo
-                  </a>
-              </div>
+			<div className="mt-3">
+				<h3 className="text-primary-200 font-bold text-2xl">{name}</h3>
+				<p className="mt-2 text-primary-600 text-[14px] leading-snug">
+					{description}
+				</p>
+			</div>
+			<div className="mt-2 flex flex-wrap gap-1"></div>
+			<div className="mt-3 flex justify-center items-center">
+				<a
+					className="shadow-md shadow-primary p-2 bg-primary-400 rounded-lg flex justify-center hover:bg-green-900"
+					href={demoLink}
+					target="_blank"
+				>
+					See the Demo
+				</a>
+			</div>
       	</Tilt>
     </m.div>
   );
@@ -170,7 +170,7 @@ const ProjectCard = ({
 
 function ProjectCards() {
     return (
-        <div className="mt-100 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
+        <div className="flex flex-wrap justify-center gap-4 text-primary-600 w-full">
             {projects.map((project, index) => (
                 <ProjectCard key={`project-${index}`} index={index} {...project} />
             ))}

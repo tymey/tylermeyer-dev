@@ -6,7 +6,13 @@ function SocialLinks() {
     return (
         <div className="w-full h-[100px] bg-primary-400 flex justify-center items-center gap-3 p-6">
             {socialLinks.map((social, index) => (
-                <SocialIcon key={`${index} - ${social.network}`} network={social.network} href={social.link} target="_blank" />
+                <SocialIcon
+                    key={`${index} - ${social.network}`}
+                    network={social.network}
+                    href={social.link}
+                    target="_blank"
+                    className="blob bounce"
+                />
             ))}
         </div>
     );

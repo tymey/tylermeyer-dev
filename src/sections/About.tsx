@@ -12,11 +12,11 @@ function About() {
                     <SectionTitle title="ABOUT ME" subtitle="Introduction" />
                 </div>
                 <div className="w-full flex flex-col-reverse sm:flex-row">
-                    <div className="w-full md:w-[50%] md:h-full flex items-center mt-100">
+                    <div className="w-full md:w-[50%] md:h-full flex items-center">
                         <LazyMotion features={domAnimation} strict>
                             <m.p
                                 initial={{ opacity: 0, x: -350 }}
-                                whileInView={{ opacity: 1, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 transition={{
                                     duration: 3.5,
                                     type: "spring",

@@ -25,11 +25,8 @@
 } */
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -197,4 +194,4 @@ polyline {
   100% {
     transform: rotate(360deg);
   }
-} 
+}

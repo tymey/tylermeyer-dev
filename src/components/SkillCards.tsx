@@ -31,14 +31,14 @@ function SkillCards({ skills }: SkillCardsProps) {
                     >
                         <div className="w-full h-[60px] flex items-center gap-2 p-1 flex-col text-primary-200">
                             <Image
-                                className="h-[100px] flex justify-center items-center w-[100px]  bg-grayscale-25 rounded-[50%] p-1 object-contain"
+                                className="h-[100px] flex justify-center items-center w-[100px] bg-transparent mt-2 object-contain"
                                 src={skill.icon.src}
                                 alt={skill.title}
                                 width={50}
                                 height={50}
                             />
                             <span
-                                className="text-3xl"
+                                className="text-xl"
                                 style={{
                                     fontFamily: "Poppins, sans-serif",
                                     fontWeight: "bold",
