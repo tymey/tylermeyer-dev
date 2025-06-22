@@ -81,7 +81,7 @@ const pythonLang = {
     id: "python",
     title: "Python",
     icon: pythonIcon,
-    description: ``,
+    description: `I have been exploring data analysis, machine learning, and AI with Python and its syntax has been easy to work with. Currently finishing a small project using Flask.`,
 };
 
 //////////////
@@ -92,14 +92,14 @@ const reactFront = {
     id: "react",
     title: "React",
     icon: reactIcon,
-    description: ``,
+    description: `After developing several web applications, I enjoy the state management and component nature of React. Designing clever reusable components brings me so much joy.`,
 };
 
 const reactRouterFront = {
     id: "react-router",
     title: "React Router",
     icon: reactRouterIcon,
-    description: ``,
+    description: `Handling client-side routing with React Router helped me create seamless user experiences with a Single-Page application that rendered different components based on the URL path.`,
 };
 
 // Next.js *
@@ -107,7 +107,7 @@ const nextFront = {
     id: "nextjs",
     title: "Next.js",
     icon: nextjsIcon,
-    description: ``,
+    description: `I developed my portfolio site using the Next.js framework and I found the experience to be developer friendly and productive.`,
 };
     
     // Material UI *
@@ -115,7 +115,7 @@ const materialUIFront = {
     id: "material-ui",
     title: "Material UI",
     icon: materialUIIcon,
-    description: ``,
+    description: `Following Google's Material Design, this React component library helped me quickly develop applications and prototypes with a clean user interface.`,
 };
     
     // Tailwind CSS *
@@ -123,7 +123,7 @@ const tailwindFront = {
     id: "tailwind",
     title: "Tailwind CSS",
     icon: tailwindIcon,
-    description: ``,
+    description: `This utility-first CSS framework provides a large set of pre-defined CSS classes. Styling directly in my HTML with Tailwind helps me create style components quick.`,
 };
 
 /////////////
