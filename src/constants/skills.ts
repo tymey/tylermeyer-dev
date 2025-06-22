@@ -134,63 +134,63 @@ const nodeBack = {
     id: "nodejs",
     title: "Node.js",
     icon: nodejsIcon,
-    description: ``,
+    description: `I've developed several applications with Node.js. Keeping the full stack in JavaScript feels great and NPM helps extend Node.js's functionality.`,
 };
 
 const expressBack = {
     id: "express",
     title: "Express.js",
     icon: expressIcon,
-    description: ``,
+    description: `Express as a framework is minimalist and unopinionated and makes building RESTful APIs a breeze. I can't imagine a Node.js application without it.`,
 };
 
 const axiosBack = {
     id: "axios",
     title: "Axios",
     icon: axiosIcon,
-    description: ``,
+    description: `A promise-based and simple API for the various HTTP methods. Axios has automatic JSON parsing, which streamlines data into ready-to-use JS objects.`,
 };
 
 const mysqlBack = {
     id: "mysql",
     title: "MySQL",
     icon: mysqlIcon,
-    description: ``,
+    description: `When creating applications with closely related data, MySQL is an open-source, cost effective RDBMS. Designing schemas for SQL databases is a fun challenge.`,
 };
     
 const sequelizeBack = {
     id: "sequelize",
     title: "Sequelize",
     icon: sequelizeIcon,
-    description: ``,
+    description: `An open-source, promise-based ORM for Node.js. Defining models and using methods to query a SQL database abstracts the underlying SQL.`,
 };
     
 const mongodbBack = {
     id: "mongodb",
     title: "Mongo DB",
     icon: mongoDBIcon,
-    description: ``,
+    description: `MongoDB is a popular NoSQL database that allows for schema flexibility. Being able to work with evolving data structures and hierarchical data is a nice plus.`,
 };
     
 const mongooseBack = {
     id: "mongoose",
     title: "Mongoose.js",
     icon: mongooseIcon,
-    description: ``,
+    description: `While the data flexibility of MongoDB can be nice, Mongoose is an ODM that allows you to define a schema and validate data before writing to your database.`,
 };
     
 const cronBack = {
     id: "cron",
     title: "Cron",
     icon: cronIcon,
-    description: ``,
+    description: `When automating tasks for a server, Cron helped me schedule tasks to run at regular intervals. I combined this with the Textbelt API to build a scheduled text feature.`,
 };
     
 const passportBack = {
     id: "passport",
     title: "Passport.js",
     icon: passportIcon,
-    description: ``,
+    description: `When setting up authentication for my projects, I used Passport.js. It integrated with Express.js and could us the Google login strategy.`,
 };
 
 ////////////////
@@ -201,35 +201,35 @@ const awsDeploy = {
     id: "aws",
     title: "AWS",
     icon: awsIcon,
-    description: ``,
+    description: `I've deployed a handful of projects using an AWS EC2 instance. Accessing the instance via terminal gave me control over build and run scripts.`,
 };
     
 const vercelDeploy = {
     id: "vercel",
     title: "Vercel",
     icon: vercelIcon,
-    description: ``,
+    description: `Deploying Next.js projects, like this portfolio site, with Vercel simplifies the process allows you to focus on development.`,
 };
     
 const mongodbAtlasDeploy = {
     id: "mongodb-atlas",
     title: "MongoDB Atlas",
     icon: mongoDBAtlasIcon,
-    description: ``,
+    description: `Using a cloud database service like MongoDB Atlas allows developers to scale their applications and automate their database management.`,
 };
     
 const jestDeploy = {
     id: "jest",
     title: "Jest",
     icon: jestIcon,
-    description: ``,
+    description: `Jest required minimal setup to start writing test code for my JavaScript applications. Due to this ease of setup, I am able to write tests quickly and efficiently.`,
 };
     
 const githubActionsDeploy = {
     id: "github-actions",
     title: "GitHub Actions",
     icon: githubActionsIcon,
-    description: ``,
+    description: `While working on a team in a shared codebase, GitHub Actions helped me set up continuous integration on every pull request to ensure code quality before merging.`,
 };
 
 ///////////////
@@ -240,28 +240,28 @@ const gitDevelop = {
     id: "git",
     title: "Git",
     icon: gitIcon,
-    description: ``,
+    description: `I can't imagine working on a project without version control like Git offers. Whenever an issue would arise, I could revert to a working state quickly.`,
 };
     
 const githubDevelop = {
     id: "github",
     title: "GitHub",
     icon: githubIcon,
-    description: ``,
+    description: `Having a central space for all my repositories on GitHub helps me work with others asynchronously. Having Git version control for collaboration is a big plus.`,
 };
     
 const agileDevelop = {
     id: "agile",
     title: "Agile",
     icon: agileIcon,
-    description: ``,
+    description: `Iterative development is the cornerstone of developing good software. Agile focuses on short sprints with focused goals to allow developers to adapt.`,
 };
 
 const webpackDevelop = {
     id: "webpack",
     title: "Webpack",
     icon: webpackIcon,
-    description: ``,
+    description: `Webpack gives developers control over how they wish to bundle their code for deployment. With this control, we can optimize performance and bundle size.`,
 };
 
 export {
