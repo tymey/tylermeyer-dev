@@ -195,3 +195,48 @@ polyline {
     transform: rotate(360deg);
   }
 }
+
+.blur-edges {
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+}
+
+.skill-card {
+  transition: transform 0.2s ease-out;
+}
+
+.card-container-left:hover .skill-card {
+  animation: swing-left 3s ease-out;
+}
+
+.card-container-right:hover .skill-card {
+  animation: swing-right 3s ease-out;
+}
+
+@keyframes swing-left {
+  0% { transform: rotate(-15deg) scale(0.75); }
+  10% { transform: rotate(14deg) scale(0.75); }
+  20% { transform: rotate(-12deg) scale(0.75); }
+  30% { transform: rotate(11deg) scale(0.75); }
+  40% { transform: rotate(-9deg) scale(0.75); }
+  50% { transform: rotate(8deg) scale(0.75); }
+  60% { transform: rotate(-5deg) scale(0.75); }
+  70% { transform: rotate(2deg) scale(0.75); }
+  80% { transform: rotate(-1deg) scale(0.75); }
+  90% { transform: rotate(1deg) scale(0.75); }
+  100% { transform: rotate(0deg) scale(0.75); }
+}
+
+@keyframes swing-right {
+  0% { transform: rotate(15deg) scale(0.75); }
+  10% { transform: rotate(-14deg) scale(0.75); }
+  20% { transform: rotate(12deg) scale(0.75); }
+  30% { transform: rotate(-11deg) scale(0.75); }
+  40% { transform: rotate(9deg) scale(0.75); }
+  50% { transform: rotate(-8deg) scale(0.75); }
+  60% { transform: rotate(5deg) scale(0.75); }
+  70% { transform: rotate(-2deg) scale(0.75); }
+  80% { transform: rotate(1deg) scale(0.75); }
+  90% { transform: rotate(-1deg) scale(0.75); }
+  100% { transform: rotate(0deg) scale(0.75); }
+}

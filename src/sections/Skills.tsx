@@ -11,12 +11,15 @@ function Skills() {
                 <div className="w-full">
                     <SectionTitle title="SKILLS" subtitle="What I can do"/>
                 </div>
-                <div className="xl:border-l-4 xl:border-r-4 xl:border-primary-400 h-full">
+                <div className="xl:border-l-4 xl:border-r-4 xl:border-primary-400 blur-edges h-full">
                     {skills.map((skillSet, index) => (
-                        <div key={index} className="relative">
-                            <div className="absolute top-[100px] w-full h-[5px] bg-primary-400"></div>
+                        <div
+                            key={index}
+                            className={`relative card-container-${index % 2 === 0 ? "left" : "right"}`}
+                        >
+                            <div className="absolute top-[50px] w-full h-[3px] bg-primary-400"></div>
                             <MarqueeCards direction={index % 2 === 0 ? "left" : "right"}>
-                                <SkillCards skills={skillSet}/>
+                                <SkillCards skills={skillSet} direction={index % 2 === 0 ? "left" : "right"}/>
                             </MarqueeCards>
                         </div>
                     ))}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import { m, LazyMotion, domAnimation } from "motion/react";
 import { StaticImageData } from "next/image";
@@ -9,25 +10,32 @@ type SkillCardsProps = {
         icon: StaticImageData;
         description: string;
     }[];
+    direction: string;
+    // isHovering: boolean;
 };
 
-function SkillCards({ skills }: SkillCardsProps) {
+function SkillCards({ skills, direction }: SkillCardsProps) {
+    const [isHovering, setIsHovering] = useState<boolean>(false);
+
     return (
         <div className="flex">
             <LazyMotion features={domAnimation} strict>
                 {skills.map((skill, index) => (
                     <m.div
-                        initial={{ scale: 0.5 }}
-                        animate={{ rotate: [0, 10, 0] }}
-                        transition={{
+                        initial={{ scale: 0.75 }}
+                        animate={isHovering ? { rotate: [0, 0, 0] } : { rotate: direction === "left" ? [-10, -15, -10] : [10, 15, 10] }}
+                        whileHover={{ scale: 0.75 }}
+                        transition={isHovering ? {} : {
                             duration: 1,
                             repeat: Infinity,
                             repeatType: "loop",
                             ease: "linear",
                         }}
+                        onMouseEnter={() => setIsHovering(true)}
+                        onMouseLeave={() => setIsHovering(false)}
                         style={{ zIndex: `${index + 1}`, transition: "all 0.6s" }}
                         key={index}
-                        className="card w-[400px] h-[400px] flex flex-col items-center  bg-primary-500 rounded-xl border-4 border-primary-400 cursor-pointer mb-[-80px]"
+                        className="card skill-card w-[400px] h-[400px] flex flex-col items-center  bg-primary-500 rounded-xl border-4 border-primary-400 cursor-pointer"
                     >
                         <div className="w-full h-[60px] flex items-center gap-2 p-1 flex-col text-primary-200">
                             <Image
