@@ -28,7 +28,7 @@ function ContactForm() {
 
     return (
         <div
-            className="justify-center items-center"
+            className="justify-center items-center bg-primary-400/20 border-primary-200/50 border-2 rounded-2xl"
             style={{
                 backgroundImage: "url(../assets/flower.png)",
                 width: "100%",

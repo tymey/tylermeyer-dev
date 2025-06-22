@@ -35,7 +35,7 @@ function SkillCards({ skills, direction, speed }: SkillCardsProps) {
                         onMouseLeave={() => setIsHovering(false)}
                         style={{ zIndex: `${index + 1}`, transition: "all 0.6s" }}
                         key={index}
-                        className="card skill-card w-[400px] h-[400px] flex flex-col items-center  bg-primary-500 rounded-xl border-4 border-primary-400 cursor-pointer"
+                        className="skill-card w-[400px] h-[400px] flex flex-col items-center bg-primary-400/30 rounded-xl border-4 border-primary-200/50 cursor-pointer"
                     >
                         <div className="w-full h-[60px] flex items-center gap-2 p-1 flex-col text-primary-200">
                             <Image
@@ -55,7 +55,7 @@ function SkillCards({ skills, direction, speed }: SkillCardsProps) {
                                 {skill.title}
                             </span>
                             <span
-                                className="text-center text-2xl bg-primary-500 text-primary-200 rounded-xl p-4"
+                                className="text-center text-2xl text-primary-200 rounded-xl p-4"
                                 style={{
                                     fontFamily: "Poppins, sans-serif",
                                     fontWeight: "600",

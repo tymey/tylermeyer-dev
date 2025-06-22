@@ -59,14 +59,19 @@ export default function Page() {
     return (
         <>
             <div className="flex items-center justify-center mt-20">
-                {codeWarsData.map((lang, index) => (
-                    <div key={`${index}-${lang.language}`}>
-                        <h1 className="text-4xl">{`${lang.language.toUpperCase()}: ${lang.count}`}</h1>
-                        {lang.completedChallenges.map((challenge, index) => (
-                            <p key={`${index}-${challenge[0]}`}><a href={challenge[1]} target="_blank" className="hover:underline">{` ${challenge[0]}`}</a></p>
-                        ))}
-                    </div>
-                ))}
+                <div>
+                    {codeWarsData.map((lang, index) => (
+                        <div className="mb-5" key={`${index}-${lang.language}`}>
+                            <h1 className="text-4xl">{`${lang.language.toUpperCase()}: ${lang.count}`}</h1>
+                            {lang.completedChallenges.map((challenge, index) => (
+                                <p key={`${index}-${challenge[0]}`}><a href={challenge[1]} target="_blank" className="hover:underline">{` ${challenge[0]}`}</a></p>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="flex items-center justify-center mt-20">
+                <div className="flex items-center justify-center loader"></div>
             </div>
         </>
     );

@@ -54,27 +54,27 @@ body {
 }
 
 #repulse-div {
-  -webkit-appearance: none;
-  appearance: none;
+  /* -webkit-appearance: none;
+  appearance: none; */
   -webkit-filter: drop-shadow(0 0 5rem #89ebc1);
   filter: drop-shadow(0 0 5rem #76a181); /* Herbal Mint */
 }
 
 #repulse-div > h1 {
   -webkit-filter: drop-shadow(0 0 5rem #89ebc1);
-  filter: drop-shadow(0 0 5rem #89ebc1);
+  filter: drop-shadow(0 0 5rem #76a181);
 }
 
-#journey-scroll::-webkit-scrollbar {
+/* #journey-scroll::-webkit-scrollbar {
   display: none;
 }
 
 #journey-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+} */
 
-.arrowpath,
+/* .arrowpath,
 polyline {
   fill: none;
   stroke: #2e5e4e;
@@ -83,7 +83,7 @@ polyline {
 
 .arrowpath {
   stroke-dasharray: 11, 5;
-}
+} */
 
 .noselect {
   -webkit-touch-callout: none;

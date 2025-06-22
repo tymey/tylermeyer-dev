@@ -38,7 +38,7 @@ function Skills() {
                             key={index}
                             className={`relative card-container-${index % 2 === 0 ? "left" : "right"}`}
                         >
-                            <div className="absolute top-[50px] w-full h-[3px] bg-primary-400"></div>
+                            <div className="absolute top-[50px] w-full h-[3px] bg-primary-200/50"></div>
                             <MarqueeCards speed={speed} direction={index % 2 === 0 ? "left" : "right"}>
                                 <SkillCards speed={speed} skills={skillSet} direction={index % 2 === 0 ? "left" : "right"}/>
                             </MarqueeCards>
