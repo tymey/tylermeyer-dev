@@ -2,16 +2,17 @@ import { ReactNode } from "react";
 import Marquee from "react-fast-marquee";
 
 type MarqueeCardsProps = {
+    speed: number;
     direction: "left" | "right";
     children?: ReactNode;
 };
 
-function MarqueeCards({ direction, children }: MarqueeCardsProps) {
+function MarqueeCards({ speed, direction, children }: MarqueeCardsProps) {
     return (
         <Marquee
             direction={direction}
             gradient={false}
-            speed={100}
+            speed={speed * 100}
             pauseOnHover={true}
         >
             {children}
