@@ -35,6 +35,44 @@ import {
     profile,
 } from "../assets";
 
+import {
+    // Languages
+    javascriptLang,
+    typescriptLang,
+    htmlLang,
+    cssLang,
+    sqlLang,
+    cLang,
+    pythonLang,
+    // Frontend
+    reactFront,
+    reactRouterFront,
+    nextFront,
+    materialUIFront,
+    tailwindFront,
+    // Backend
+    nodeBack,
+    expressBack,
+    axiosBack,
+    mysqlBack,
+    sequelizeBack,
+    mongodbBack,
+    mongooseBack,
+    cronBack,
+    passportBack,
+    // Deployment
+    awsDeploy,
+    vercelDeploy,
+    mongodbAtlasDeploy,
+    jestDeploy,
+    githubActionsDeploy,
+    // Developer
+    gitDevelop,
+    githubDevelop,
+    agileDevelop,
+    webpackDevelop,
+} from "./skills";
+
 const introduction = {
     text: [
         `Welcome! Thank you for visiting!`,
@@ -89,254 +127,57 @@ const projects = [
 ];
 
 const languageSkills = [
-    // JavaScript *
-    {
-        id: "javascript",
-        title: "JavaScript",
-        icon: javascriptIcon,
-        description: ``,
-    },
-
-    // TypeScript *
-    {
-        id: "typescript",
-        title: "TypeScript",
-        icon: typescriptIcon,
-        description: ``,
-    },
-
-    // HTML *
-    {
-        id: "html",
-        title: "HTML",
-        icon: htmlIcon,
-        description: ``,
-    },
-
-    // CSS *
-    {
-        id: "css",
-        title: "CSS",
-        icon: cssIcon,
-        description: ``,
-    },
-    
-    // SQL *
-    {
-        id: "sql",
-        title: "SQL",
-        icon: sqlIcon,
-        description: ``,
-    },
-    
-    // C *
-    {
-        id: "c",
-        title: "C",
-        icon: cIcon,
-        description: ``,
-    },
-    
-    // Python *
-    {
-        id: "python",
-        title: "Python",
-        icon: pythonIcon,
-        description: ``,
-    },
+    javascriptLang,
+    typescriptLang,
+    htmlLang,
+    cssLang,
+    sqlLang,
+    cLang,
+    pythonLang,
 ];
 
 const frontendSkills = [
-    // React *
-    {
-        id: "react",
-        title: "React",
-        icon: reactIcon,
-        description: ``,
-    },
-    
-    // React Router *
-    {
-        id: "react-router",
-        title: "React Router",
-        icon: reactRouterIcon,
-        description: ``,
-    },
-    
-    // Next.js *
-    {
-        id: "nextjs",
-        title: "Next.js",
-        icon: nextjsIcon,
-        description: ``,
-    },
-    
-    // Material UI *
-    {
-        id: "material-ui",
-        title: "Material UI",
-        icon: materialUIIcon,
-        description: ``,
-    },
-    
-    // Tailwind CSS *
-    {
-        id: "tailwind",
-        title: "Tailwind CSS",
-        icon: tailwindIcon,
-        description: ``,
-    },
-    
+    reactFront,
+    reactRouterFront,
+    nextFront,
+    materialUIFront,
+    tailwindFront,
 ];
 
 const backendSkills = [
-    // Node.js *
-    {
-        id: "nodejs",
-        title: "Node.js",
-        icon: nodejsIcon,
-        description: ``,
-    },
-    
-    // Express.js *
-    {
-        id: "express",
-        title: "Express.js",
-        icon: expressIcon,
-        description: ``,
-    },
-    
-    // Axios *
-    {
-        id: "axios",
-        title: "Axios",
-        icon: axiosIcon,
-        description: ``,
-    },
-    
-    // MySQL *
-    {
-        id: "mysql",
-        title: "MySQL",
-        icon: mysqlIcon,
-        description: ``,
-    },
-    
-    // Sequelize *
-    {
-        id: "sequelize",
-        title: "Sequelize",
-        icon: sequelizeIcon,
-        description: ``,
-    },
-    
-    // MongoDB *
-    {
-        id: "mongodb",
-        title: "Mongo DB",
-        icon: mongoDBIcon,
-        description: ``,
-    },
-    
-    // Mongoose *
-    {
-        id: "mongoose",
-        title: "Mongoose.js",
-        icon: mongooseIcon,
-        description: ``,
-    },
-    
-    // Cron *
-    {
-        id: "cron",
-        title: "Cron",
-        icon: cronIcon,
-        description: ``,
-    },
-    
-    // Passport.js *
-    {
-        id: "passport",
-        title: "Passport.js",
-        icon: passportIcon,
-        description: ``,
-    },
+    nodeBack,
+    expressBack,
+    axiosBack,
+    mysqlBack,
+    sequelizeBack,
+    mongodbBack,
+    mongooseBack,
+    cronBack,
+    passportBack,
 ];
 
 const deploymentSkills = [
-    // AWS *
-    {
-        id: "aws",
-        title: "AWS",
-        icon: awsIcon,
-        description: ``,
-    },
-    
-    // Vercel *
-    {
-        id: "vercel",
-        title: "Vercel",
-        icon: vercelIcon,
-        description: ``,
-    },
-    
-    // MongoDB Atlas *
-    {
-        id: "mongodb-atlas",
-        title: "MongoDB Atlas",
-        icon: mongoDBAtlasIcon,
-        description: ``,
-    },
-    
-    // Jest *
-    {
-        id: "jest",
-        title: "Jest",
-        icon: jestIcon,
-        description: ``,
-    },
-    
-    // GitHub Actions *
-    {
-        id: "github-actions",
-        title: "GitHub Actions",
-        icon: githubActionsIcon,
-        description: ``,
-    },
+    awsDeploy,
+    vercelDeploy,
+    mongodbAtlasDeploy,
+    jestDeploy,
+    githubActionsDeploy,
 ];
 
 const developerSkills = [
-    // Git *
-    {
-        id: "git",
-        title: "Git",
-        icon: gitIcon,
-        description: ``,
-    },
-    
-    // GitHub *
-    {
-        id: "github",
-        title: "GitHub",
-        icon: githubIcon,
-        description: ``,
-    },
-    
-    // Agile *
-    {
-        id: "agile",
-        title: "Agile",
-        icon: agileIcon,
-        description: ``,
-    },
+    gitDevelop,
+    githubDevelop,
+    agileDevelop,
+    webpackDevelop,
+];
 
-    // Webpack
-    {
-        id: "webpack",
-        title: "Webpack",
-        icon: webpackIcon,
-        description: ``,
-    }
+// Collection of all skills
+const skills = [
+    languageSkills,
+    frontendSkills,
+    backendSkills,
+    deploymentSkills,
+    developerSkills,
 ];
 
 const formInputFields = [
@@ -401,11 +242,7 @@ export {
     introduction,
     navLinks,
     projects,
-    languageSkills,
-    frontendSkills,
-    backendSkills,
-    deploymentSkills,
-    developerSkills,
+    skills,
     formInputFields,
     socialLinks,
 };

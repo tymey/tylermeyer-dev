@@ -2,13 +2,7 @@ import SectionTitle from "@/components/SectionTitle";
 import MarqueeCards from "@/components/MarqueeCards";
 import SkillCards from "@/components/SkillCards";
 
-import {
-    languageSkills,
-    frontendSkills,
-    backendSkills,
-    deploymentSkills,
-    developerSkills,
- } from "@/constants/constants";
+import { skills } from "@/constants/constants";
 
 function Skills() {
     return (
@@ -17,16 +11,10 @@ function Skills() {
                 <div className="w-full">
                     <SectionTitle title="SKILLS" subtitle="What I can do"/>
                 </div>
-                <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400 h-full">
-                    {[
-                        languageSkills,
-                        frontendSkills,
-                        backendSkills,
-                        deploymentSkills,
-                        developerSkills,
-                    ].map((skillSet, index) => (
+                <div className="xl:border-l-4 xl:border-r-4 xl:border-primary-400 h-full">
+                    {skills.map((skillSet, index) => (
                         <div key={index} className="relative">
-                            <div className="absolute top-[45px] w-full h-[1px] bg-primary-400"></div>
+                            <div className="absolute top-[100px] w-full h-[5px] bg-primary-400"></div>
                             <MarqueeCards direction={index % 2 === 0 ? "left" : "right"}>
                                 <SkillCards skills={skillSet}/>
                             </MarqueeCards>
