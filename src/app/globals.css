@@ -175,7 +175,7 @@ polyline {
   animation: rotation 1s linear infinite;
 }
 .loader::after {
-  content: '';  
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -215,10 +215,10 @@ polyline {
 
 @keyframes swing-left {
   0% {
-    transform: rotate(-15deg) scale(0.75);
+    transform: rotate(-10deg) scale(0.75);
   }
   50% {
-    transform: rotate(10deg) scale(0.75);
+    transform: rotate(7deg) scale(0.75);
   }
   80% {
     transform: rotate(-3deg) scale(0.75);
@@ -230,10 +230,10 @@ polyline {
 
 @keyframes swing-right {
   0% {
-    transform: rotate(15deg) scale(0.75);
+    transform: rotate(10deg) scale(0.75);
   }
   50% {
-    transform: rotate(-10deg) scale(0.75);
+    transform: rotate(-7deg) scale(0.75);
   }
   80% {
     transform: rotate(3deg) scale(0.75);

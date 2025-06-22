@@ -23,7 +23,7 @@ function SkillCards({ skills, direction, speed }: SkillCardsProps) {
                 {skills.map((skill, index) => (
                     <m.div
                         initial={{ scale: 0.75 }}
-                        animate={isHovering ? { rotate: [0, 0, 0] } : { rotate: direction === "left" ? [-2 * speed, -5 * speed, -2 * speed] : [2 * speed, 5 * speed, 2 * speed] }}
+                        animate={isHovering ? { rotate: [0, 0, 0] } : { rotate: direction === "left" ? [-1 * speed, -7 * speed, -1 * speed] : [1 * speed, 7 * speed, 1 * speed] }}
                         whileHover={{ scale: 0.75 }}
                         transition={isHovering ? {} : {
                             duration: 1,
