@@ -206,37 +206,39 @@ polyline {
 }
 
 .card-container-left:hover .skill-card {
-  animation: swing-left 3s ease-out;
+  animation: swing-left 0.8s ease-out;
 }
 
 .card-container-right:hover .skill-card {
-  animation: swing-right 3s ease-out;
+  animation: swing-right 0.8s ease-out;
 }
 
 @keyframes swing-left {
-  0% { transform: rotate(-15deg) scale(0.75); }
-  10% { transform: rotate(14deg) scale(0.75); }
-  20% { transform: rotate(-12deg) scale(0.75); }
-  30% { transform: rotate(11deg) scale(0.75); }
-  40% { transform: rotate(-9deg) scale(0.75); }
-  50% { transform: rotate(8deg) scale(0.75); }
-  60% { transform: rotate(-5deg) scale(0.75); }
-  70% { transform: rotate(2deg) scale(0.75); }
-  80% { transform: rotate(-1deg) scale(0.75); }
-  90% { transform: rotate(1deg) scale(0.75); }
-  100% { transform: rotate(0deg) scale(0.75); }
+  0% {
+    transform: rotate(-15deg) scale(0.75);
+  }
+  50% {
+    transform: rotate(10deg) scale(0.75);
+  }
+  80% {
+    transform: rotate(-3deg) scale(0.75);
+  }
+  100% {
+    transform: rotate(0deg) scale(0.75);
+  }
 }
 
 @keyframes swing-right {
-  0% { transform: rotate(15deg) scale(0.75); }
-  10% { transform: rotate(-14deg) scale(0.75); }
-  20% { transform: rotate(12deg) scale(0.75); }
-  30% { transform: rotate(-11deg) scale(0.75); }
-  40% { transform: rotate(9deg) scale(0.75); }
-  50% { transform: rotate(-8deg) scale(0.75); }
-  60% { transform: rotate(5deg) scale(0.75); }
-  70% { transform: rotate(-2deg) scale(0.75); }
-  80% { transform: rotate(1deg) scale(0.75); }
-  90% { transform: rotate(-1deg) scale(0.75); }
-  100% { transform: rotate(0deg) scale(0.75); }
+  0% {
+    transform: rotate(15deg) scale(0.75);
+  }
+  50% {
+    transform: rotate(-10deg) scale(0.75);
+  }
+  80% {
+    transform: rotate(3deg) scale(0.75);
+  }
+  100% {
+    transform: rotate(0deg) scale(0.75);
+  }
 }
