@@ -41,6 +41,7 @@ import {
 } from "./skills";
 
 import {
+    debateLabProject,
     flareProject,
     gameKnightProject,
     vitalityProject,
@@ -76,6 +77,7 @@ const navLinks = [
 ];
 
 const projects = [
+    debateLabProject,
     flareProject,
     gameKnightProject,
     vitalityProject,

@@ -35,6 +35,7 @@ import vercelIcon from "./tech/vercel.png";
 import webpackIcon from "./tech/webpack.png";
 
 // Project Logos
+import debateLabLogo from "./projects/debatelabicon.png"
 import flareLogo from "./projects/flareLogo.png";
 import gameKnightLogo from "./projects/gameKnightLogo.png";
 import vitalityLogo from "./projects/vitalityLogo.png";
@@ -75,6 +76,7 @@ export {
     typescriptIcon,
     vercelIcon,
     webpackIcon,
+    debateLabLogo,
     flareLogo,
     gameKnightLogo,
     vitalityLogo,
