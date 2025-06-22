@@ -1,6 +1,5 @@
 "use client"
 
-import { channel } from "diagnostics_channel";
 import { useEffect, useState } from "react";
 
 type CodewarsData = {
@@ -21,9 +20,9 @@ export default function Page() {
                 return response.json();
             })
             .then(data => {
-                console.log('Completed Challenges:', data);
-                const langData = data.data.reduce((acc: any, curr: any) => {
-                    curr.completedLanguages.forEach((lang: any) => {
+                // console.log('Completed Challenges:', data);
+                const langData = data.data.reduce((acc: { [key: string]: { count: number, completedChallenges: [string, string][] } }, curr: { name: string, completedLanguages: [string], id: string }) => {
+                    curr.completedLanguages.forEach((lang: string) => {
                         if (!acc[lang]) {
                             acc[lang] = {
                                 count: 0,
@@ -36,8 +35,8 @@ export default function Page() {
                     return acc;
                 }, {});
 
-                console.log('Reformatted Data:', langData);
-                
+                // console.log('Reformatted Data:', langData);
+
                 const langArray = Object.getOwnPropertyNames(langData).map(lang => (
                     {
                         language: lang,
@@ -57,8 +56,6 @@ export default function Page() {
         fetchCodeWars();
     }, []);
 
-    console.log('Code Wars Data:', codeWarsData);
-
     return (
         <>
             <div className="flex items-center justify-center mt-20">
@@ -66,10 +63,7 @@ export default function Page() {
                     <div key={`${index}-${lang.language}`}>
                         <h1 className="text-4xl">{`${lang.language.toUpperCase()}: ${lang.count}`}</h1>
                         {lang.completedChallenges.map((challenge, index) => (
-                            <p key={`${index}-${challenge[0]}`}>
-                                {challenge[0]}
-                                <a href={challenge[1]} target="_blank" className="hover:underline">{` Go to Challenge`}</a>
-                            </p>
+                            <p><a href={challenge[1]} target="_blank" className="hover:underline">{` ${challenge[0]}`}</a></p>
                         ))}
                     </div>
                 ))}
