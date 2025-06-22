@@ -1,37 +1,4 @@
 import {
-    agileIcon,
-    awsIcon,
-    axiosIcon,
-    cIcon,
-    cronIcon,
-    cssIcon,
-    expressIcon,
-    gitIcon,
-    githubIcon,
-    githubActionsIcon,
-    htmlIcon,
-    javascriptIcon,
-    jestIcon,
-    materialUIIcon,
-    mongoDBIcon,
-    mongoDBAtlasIcon,
-    mongooseIcon,
-    mysqlIcon,
-    nextjsIcon,
-    nodejsIcon,
-    passportIcon,
-    pythonIcon,
-    reactIcon,
-    reactRouterIcon,
-    sequelizeIcon,
-    sqlIcon,
-    tailwindIcon,
-    typescriptIcon,
-    vercelIcon,
-    webpackIcon,
-    flareLogo,
-    gameKnightLogo,
-    vitalityLogo,
     profile,
 } from "../assets";
 
@@ -73,6 +40,12 @@ import {
     webpackDevelop,
 } from "./skills";
 
+import {
+    flareProject,
+    gameKnightProject,
+    vitalityProject,
+} from "./projects";
+
 const introduction = {
     text: [
         `Welcome! Thank you for visiting!`,
@@ -103,27 +76,9 @@ const navLinks = [
 ];
 
 const projects = [
-    {
-        name: "Flare",
-        description: "A social app",
-        image: flareLogo,
-        sourceCodeLink: "https://github.com/the-full-stack-attack/flare",
-        demoLink: "",
-    },
-    {
-        name: "Game Knight",
-        description: "A board game app",
-        image: gameKnightLogo,
-        sourceCodeLink: "https://github.com/Awesome-Person-Interface/game-knight",
-        demoLink: "",
-    },
-    {
-        name: "Vitality",
-        description: "A fitness tracking app",
-        image: vitalityLogo,
-        sourceCodeLink: "https://github.com/Awesome-Person-Interface/fitness-tracker",
-        demoLink: "",
-    },
+    flareProject,
+    gameKnightProject,
+    vitalityProject,
 ];
 
 const languageSkills = [
