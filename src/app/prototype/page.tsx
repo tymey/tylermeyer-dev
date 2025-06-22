@@ -63,7 +63,7 @@ export default function Page() {
                     <div key={`${index}-${lang.language}`}>
                         <h1 className="text-4xl">{`${lang.language.toUpperCase()}: ${lang.count}`}</h1>
                         {lang.completedChallenges.map((challenge, index) => (
-                            <p><a href={challenge[1]} target="_blank" className="hover:underline">{` ${challenge[0]}`}</a></p>
+                            <p key={`${index}-${challenge[0]}`}><a href={challenge[1]} target="_blank" className="hover:underline">{` ${challenge[0]}`}</a></p>
                         ))}
                     </div>
                 ))}
