@@ -1,3 +1,6 @@
+// TM Icon
+import tmLogo from "./logo/TM-Green-Logo.png";
+
 // SVGs
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -44,6 +47,7 @@ import vitalityLogo from "./projects/vitalityLogo.png";
 import profile from "./profile/profile.png";
 
 export {
+    tmLogo,
     menu,
     close,
     agileIcon,

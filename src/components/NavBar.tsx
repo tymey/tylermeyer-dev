@@ -23,7 +23,14 @@ function NavBar() {
                         setTimeout(() => { router.push("/"); }, 1000);
                     }}
                 >
-                    <p className="text-primary-600 text-lg font-bold cursor-pointer flex">
+                    {/* <Image
+                        className="object-contain cursor-pointer z-20" 
+                        src={tmLogo.src}
+                        alt={tmLogo.src}
+                        width={50}
+                        height={50}
+                    /> */}
+                    <p className="text-primary-600 hover:text-contrast-200 text-[24px] font-bold cursor-pointer flex">
                         Home
                     </p>
                 </div>
