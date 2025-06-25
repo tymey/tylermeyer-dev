@@ -98,6 +98,8 @@ type ProjectCardProps = {
     index: number;
     name: string;
     description: string;
+	techStack: string[];
+	features: string[];
     image: StaticImageData;
     sourceCodeLink: string;
     demoLink: string;
@@ -107,6 +109,8 @@ const ProjectCard = ({
   index,
   name,
   description,
+  techStack,
+  features,
   image,
   sourceCodeLink,
   demoLink,
@@ -147,9 +151,12 @@ const ProjectCard = ({
 
 			<div className="mt-3">
 				<h3 className="text-primary-200 font-bold text-2xl">{name}</h3>
-				<div className="h-[100px]">
+				<div className="h-[250px]">
 					<p className="mt-2 text-primary-600 text-[14px] leading-snug">
 						{description}
+					</p>
+					<p className="mt-2 text-primary-600 text-[14px] leading-snug">
+						<b>Tech Stack: </b>{techStack.join(', ')}
 					</p>
 				</div>
 			</div>
