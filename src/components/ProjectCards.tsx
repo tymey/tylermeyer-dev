@@ -152,7 +152,7 @@ const ProjectCard = ({
 			<div className="mt-3">
 				<h3 className="text-primary-200 font-bold text-2xl">{name}</h3>
 				<div className="mt-2 relative h-[250px] overflow-y-auto no-scrollbar rounded-2xl">
-					<div className="pointer-events-none absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-primary-600/40 to-transparent z-10"></div>
+					<div className="pointer-events-none absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-primary-500/40 to-transparent z-10"></div>
 					<div className="relative z-0 px-2">
 						<p className="mt-2 text-primary-600 text-[14px] leading-snug">
 							{description}
@@ -174,7 +174,7 @@ const ProjectCard = ({
 							))}
 						</ul>
 					</div>
-					<div className="pointer-events-none bottom-0 left-0 w-full h-6 bg-gradient-to-t from-primary-600/40 to-transparent z-10"></div>
+					<div className="pointer-events-none bottom-0 left-0 w-full h-6 bg-gradient-to-t from-primary-500/40 to-transparent z-10"></div>
 				</div>
 			</div>
 			<div className="mt-2 flex flex-wrap gap-1"></div>
