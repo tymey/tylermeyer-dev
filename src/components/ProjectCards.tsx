@@ -156,11 +156,11 @@ const ProjectCard = ({
 			<div className="mt-2 flex flex-wrap gap-1"></div>
 			<div className="mt-3 flex justify-center items-center">
 				<a
-					className="shadow-md shadow-primary p-2 bg-primary-400 rounded-lg flex justify-center hover:bg-green-900"
+					className={`shadow-md shadow-primary p-2 bg-primary-400 rounded-lg flex justify-center hover:bg-green-900 ${demoLink ? '' : 'pointer-events-none'}`}
 					href={demoLink}
 					target="_blank"
 				>
-					See the Demo
+					{demoLink ? 'See the Demo' : 'Demo Unavailable'}
 				</a>
 			</div>
       	</Tilt>
