@@ -94,6 +94,14 @@ polyline {
   user-select: none;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .blob {
   animation: morph 3.6s linear infinite;
   background: transparent;
