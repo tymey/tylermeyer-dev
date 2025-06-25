@@ -1,12 +1,12 @@
-import { useCallback } from "react";
+// import { useCallback } from "react";
 import { Particles } from "@tsparticles/react";
-import { loadAll } from "@tsparticles/all";
-import { Engine } from "@tsparticles/engine";
+// import { loadAll } from "@tsparticles/all";
+// import { Engine } from "@tsparticles/engine";
 
 function ParticlesBackground() {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadAll(engine);
-    }, []);
+    // const particlesInit = useCallback(async (engine: Engine) => {
+    //     await loadAll(engine);
+    // }, []);
 
     return (
         <Particles
