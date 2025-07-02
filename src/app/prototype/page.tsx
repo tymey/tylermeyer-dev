@@ -10,6 +10,7 @@ type CodewarsData = {
 
 export default function Page() {
     const [codeWarsData, setCodeWarsData] = useState<CodewarsData>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const fetchCodeWars = () => {
         fetch("https://www.codewars.com/api/v1/users/tymey/code-challenges/completed?page=0")
@@ -20,7 +21,7 @@ export default function Page() {
                 return response.json();
             })
             .then(data => {
-                // console.log('Completed Challenges:', data);
+                console.log('Completed Challenges:', data);
                 const langData = data.data.reduce((acc: { [key: string]: { count: number, completedChallenges: [string, string][] } }, curr: { name: string, completedLanguages: [string], id: string }) => {
                     curr.completedLanguages.forEach((lang: string) => {
                         if (!acc[lang]) {
@@ -35,7 +36,7 @@ export default function Page() {
                     return acc;
                 }, {});
 
-                // console.log('Reformatted Data:', langData);
+                console.log('Reformatted Data:', langData);
 
                 const langArray = Object.getOwnPropertyNames(langData).map(lang => (
                     {
@@ -45,7 +46,34 @@ export default function Page() {
                     }
                 ));
 
+                langArray.forEach(lang => {
+                    lang.completedChallenges.sort((a: string[], b: string[]) => {
+                        const challengeA = a[0].toUpperCase();
+                        const challengeB = b[0].toUpperCase();
+                        if (challengeA < challengeB) {
+                            return -1;
+                        }
+                        if (challengeA > challengeB) {
+                            return 1;
+                        }
+                        return 0;
+                    })
+                });
+
+                langArray.sort((a, b) => {
+                    const langA = a.language.toUpperCase();
+                    const langB = b.language.toUpperCase();
+                    if (langA < langB) {
+                        return -1;
+                    }
+                    if (langA > langB) {
+                        return 1;
+                    }
+                    return 0;
+                })
+
                 setCodeWarsData(langArray);
+                setLoading(false);
             })
             .catch(error => {
                 console.error("Error fetching Codewars data:", error);
@@ -55,6 +83,8 @@ export default function Page() {
     useEffect(() => {
         fetchCodeWars();
     }, []);
+
+    console.log('Code Wars Array:', codeWarsData);
 
     return (
         <>
@@ -71,7 +101,11 @@ export default function Page() {
                 </div>
             </div>
             <div className="flex items-center justify-center mt-20">
-                <div className="flex items-center justify-center loader"></div>
+                {
+                    loading ? (
+                        <div className="flex items-center justify-center loader"></div>
+                    ) : null
+                }
             </div>
         </>
     );
